@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            display: none;
+            padding: 10px;
+        }
+        .accordion-title {
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+        }
+
+        .accordion {
+            background: #ddd;
+            width: 500px;
+            margin: 0 auto;
+            gap: 40px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-title">Product Information <img src="./angle-small-down.svg"
+                    class="accordion-svg"></button>
+            <div class="content">
+                <p>Our flagship product combines cutting-edge technology with sleek design. Built with premium
+                    materials, it offers unparalleled performance and reliability.
+
+                    Key features include advanced processing capabilities, and an intuitive user interface designed for
+                    both beginners and experts.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-title">Shipping Details <img src="./angle-small-down.svg" class="accordion-svg"
+                    alt=""></button>
+            <div class="content">
+                <p>We offer worldwide shipping through trusted courier partners. Standard delivery takes 3-5 business
+                    days, while express shipping ensures delivery within 1-2 business days.
+
+                    All orders are carefully packaged and fully insured. Track your shipment in real-time through our
+                    dedicated tracking portal.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-title">Return Policy <img src="./angle-small-down.svg" class="accordion-svg"
+                    alt=""></button>
+            <div class="content">
+                <p>We stand behind our products with a comprehensive 30-day return policy. If you're not completely
+                    satisfied, simply return the item in its original condition.
+
+                    Our hassle-free return process includes free return shipping and full refunds processed within 48
+                    hours of receiving the returned item.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js""></script>
+</body>
+</html>
